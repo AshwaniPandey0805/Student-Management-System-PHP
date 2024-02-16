@@ -8,6 +8,10 @@
 
     // include '../tables/subjectInfo.php';
 
+    // include '../tables/subjects.php';
+
+    
+
      $username = $_POST['name'];
     //  echo $username."<br>";
      $email = $_POST['email'];
@@ -18,7 +22,7 @@
     //  echo $stream."<br>";
 
      $subject = $_POST['subjects'];
-     print_r($subject);
+    //  print_r($subject);
 
      
      /**
@@ -49,7 +53,7 @@
       * @param $conn $conn [explicite description]
       * @param $subject $subject [explicite description]
       * @param $email $email [explicite description]
-      *
+      * 
       * @return void
       */
      function insertDataToSelectedSubject($conn, $subject, $email){
@@ -63,21 +67,10 @@
                     WHERE email = '$email';";
             $conn->query($query);
         }
-        
-
-        // if($conn->query($query) === TRUE){
-        //     echo "Data added to selected subjet table ";
-        // }else{
-        //     echo "Something went wrong";
-        // }
 
      }
 
      insertDataToSelectedSubject($conn, $subject, $email);
-
-
-//      INSERT INTO subjects(subject_ID, subject_name)
-// VALUES(101, 'Math')
 
 
     

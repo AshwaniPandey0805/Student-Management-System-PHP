@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student-ERP</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/loginStyle.css">
 </head>
 <body>
 <h2>Student Information & Subject Selection</h2>
-    <form action="./controller/insert_data_table.php" method="post">
+    <form action="./view/show_Subjects.php" method="post">
     <div>
       <label for="name">Student Name:</label>
       <input type="text" id="name" name="name" required style="margin-top: 5px;">
